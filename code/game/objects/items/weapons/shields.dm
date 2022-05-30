@@ -108,3 +108,19 @@
 
 	attack_verb = list("shoved", "bashed")
 	var/active = 0
+
+/obj/item/weapon/shield/combat
+	name = "combat shield"
+	desc = "A shield capable of stopping most projectile and melee attacks."
+	icon = 'icons/obj/items/weapons/p9_sharp.dmi'
+	icon_state = "combat-shield"  //animated
+	flags_atom = FPRINT|CONDUCT|NOBLOODY
+	flags_equip_slot = SLOT_BACK
+	force = 3
+	throwforce = 5.0
+	throw_speed = SPEED_FAST
+	throw_range = 4
+	w_class = SIZE_LARGE
+
+	attack_verb = list("shoved", "bashed")
+	var/active = 0
